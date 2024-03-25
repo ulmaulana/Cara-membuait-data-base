@@ -78,6 +78,7 @@ ALTER TABLE dbMahasiswa DROP COLUMN ID_Mahasiswa;
 
 ## Tutorial dicukupkan sampai sini, Sekian Terima kasih. Wassalamu'alaikum Warrahmatullahi Wabarakatuh.
 
+
 ## Cheat Sheet
 >Berikut saya paparkan Cheat Sheet mySQL agar mempermudah kita mengingat dan belajar mySQL!
 >Credit, thanks to [bradtraversy](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)
