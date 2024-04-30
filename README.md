@@ -83,7 +83,186 @@ ALTER TABLE dbMahasiswa DROP COLUMN ID_Mahasiswa;
 >Berikut saya paparkan Cheat Sheet mySQL agar mempermudah kita mengingat dan belajar mySQL!
 >Credit, thanks to [bradtraversy](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)
 
-# MySQL Cheat Sheet
+# MySQL Cheat Sheet 1
+Tentu! Berikut ini adalah cheat sheet untuk beberapa perintah dasar yang sering digunakan dalam manajemen basis data:
+
+### MySQL/MariaDB:
+
+#### Interaksi dengan Database:
+- **Login ke Database:**
+  ```
+  mysql -u username -p
+  ```
+- **Pilih Database:**
+  ```
+  USE nama_database;
+  ```
+- **Tampilkan Semua Database:**
+  ```
+  SHOW DATABASES;
+  ```
+
+#### Interaksi dengan Tabel:
+- **Tampilkan Semua Tabel:**
+  ```
+  SHOW TABLES;
+  ```
+- **Tampilkan Struktur Tabel:**
+  ```
+  DESCRIBE nama_tabel;
+  ```
+- **Tampilkan Data dari Tabel:**
+  ```
+  SELECT * FROM nama_tabel;
+  ```
+
+#### Manipulasi Data:
+- **Tambah Data:**
+  ```
+  INSERT INTO nama_tabel (kolom1, kolom2, ...) VALUES (nilai1, nilai2, ...);
+  ```
+- **Perbarui Data:**
+  ```
+  UPDATE nama_tabel SET kolom1 = nilai1, kolom2 = nilai2 WHERE kondisi;
+  ```
+- **Hapus Data:**
+  ```
+  DELETE FROM nama_tabel WHERE kondisi;
+  ```
+
+#### Mengelola Tabel:
+- **Buat Tabel:**
+  ```
+  CREATE TABLE nama_tabel (
+      kolom1 tipe_data,
+      kolom2 tipe_data,
+      ...
+  );
+  ```
+- **Ubah Tabel (Tambah Kolom):**
+  ```
+  ALTER TABLE nama_tabel ADD nama_kolom tipe_data;
+  ```
+- **Hapus Tabel:**
+  ```
+  DROP TABLE nama_tabel;
+  ```
+
+### PostgreSQL:
+
+#### Interaksi dengan Database:
+- **Login ke Database:**
+  ```
+  psql -U username -d nama_database
+  ```
+- **Tampilkan Semua Database:**
+  ```
+  \l
+  ```
+- **Pilih Database:**
+  ```
+  \c nama_database
+  ```
+
+#### Interaksi dengan Tabel:
+- **Tampilkan Semua Tabel:**
+  ```
+  \dt
+  ```
+- **Tampilkan Struktur Tabel:**
+  ```
+  \d nama_tabel
+  ```
+- **Tampilkan Data dari Tabel:**
+  ```
+  SELECT * FROM nama_tabel;
+  ```
+
+#### Manipulasi Data:
+- **Tambah Data:**
+  ```
+  INSERT INTO nama_tabel (kolom1, kolom2, ...) VALUES (nilai1, nilai2, ...);
+  ```
+- **Perbarui Data:**
+  ```
+  UPDATE nama_tabel SET kolom1 = nilai1, kolom2 = nilai2 WHERE kondisi;
+  ```
+- **Hapus Data:**
+  ```
+  DELETE FROM nama_tabel WHERE kondisi;
+  ```
+
+#### Mengelola Tabel:
+- **Buat Tabel:**
+  ```
+  CREATE TABLE nama_tabel (
+      kolom1 tipe_data,
+      kolom2 tipe_data,
+      ...
+  );
+  ```
+- **Ubah Tabel (Tambah Kolom):**
+  ```
+  ALTER TABLE nama_tabel ADD COLUMN nama_kolom tipe_data;
+  ```
+- **Hapus Tabel:**
+  ```
+  DROP TABLE nama_tabel;
+  ```
+
+### MongoDB:
+
+#### Interaksi dengan Database:
+- **Login ke Database:**
+  ```
+  mongo
+  ```
+- **Tampilkan Semua Database:**
+  ```
+  show dbs
+  ```
+- **Pilih Database:**
+  ```
+  use nama_database
+  ```
+
+#### Interaksi dengan Koleksi:
+- **Tampilkan Semua Koleksi:**
+  ```
+  show collections
+  ```
+- **Tampilkan Data dari Koleksi:**
+  ```
+  db.nama_koleksi.find()
+  ```
+
+#### Manipulasi Data:
+- **Tambah Data:**
+  ```
+  db.nama_koleksi.insert({field1: value1, field2: value2, ...})
+  ```
+- **Perbarui Data:**
+  ```
+  db.nama_koleksi.update({kondisi}, {$set: {field1: value1, field2: value2, ...}})
+  ```
+- **Hapus Data:**
+  ```
+  db.nama_koleksi.remove({kondisi})
+  ```
+
+#### Mengelola Koleksi:
+- **Buat Koleksi:**
+  ```
+  db.createCollection("nama_koleksi")
+  ```
+- **Hapus Koleksi:**
+  ```
+  db.nama_koleksi.drop()
+  ```
+
+Ini hanya beberapa perintah dasar yang paling umum digunakan. Setiap sistem basis data memiliki sintaks yang berbeda, jadi pastikan untuk merujuk ke dokumentasi resmi sistem basis data yang Anda gunakan untuk informasi lebih lanjut.
+
+# MySQL Cheat Sheet 2
 
 > Help with SQL commands to interact with a MySQL database
 
