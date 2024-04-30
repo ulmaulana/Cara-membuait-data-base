@@ -260,6 +260,32 @@ Tentu! Berikut ini adalah cheat sheet untuk beberapa perintah dasar yang sering 
   db.nama_koleksi.drop()
   ```
 
+### Menghapus salah satu DATABASE
+
+Berikut adalah perintah untuk menghapus database di beberapa sistem basis data yang umum digunakan:
+
+### MySQL/MariaDB:
+```
+DROP DATABASE nama_database;
+```
+
+Pastikan untuk berhati-hati saat menggunakan perintah ini karena menghapus database akan menghapus semua tabel, data, dan objek lain yang terkait dengan database tersebut.
+
+### PostgreSQL:
+```
+DROP DATABASE nama_database;
+```
+
+Perintah ini akan menghapus database beserta semua tabel, skema, dan data yang terkait. Pastikan untuk menggunakan perintah ini dengan hati-hati karena data yang hilang mungkin tidak dapat dipulihkan.
+
+### MongoDB:
+```
+use nama_database
+db.dropDatabase()
+```
+
+Perintah ini akan menghapus database beserta semua koleksinya dari server MongoDB. Pastikan untuk berhati-hati karena operasi ini tidak dapat dibatalkan dan akan menghapus semua data yang terkait dengan database tersebut.
+
 Ini hanya beberapa perintah dasar yang paling umum digunakan. Setiap sistem basis data memiliki sintaks yang berbeda, jadi pastikan untuk merujuk ke dokumentasi resmi sistem basis data yang Anda gunakan untuk informasi lebih lanjut.
 
 # MySQL Cheat Sheet 2
